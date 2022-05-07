@@ -1,2 +1,2 @@
 # bg.io
-[My page](google.com)
+[My page](index.html)
