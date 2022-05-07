@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylebg.css">
+</head>
+<body>
+    <h1>Backgrounds</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <div class="wrap">
+        <div class="card" style="background: url(file:///C:/Users/X/Downloads/grad.png);" onclick="show('file:///C:/Users/X/Desktop/preview2.svg');">
+            <div class="preview" style="background: url(grad.svg); background-size: cover;"></div>
+        </div>
+        <div class="card" style="background: url(Screenshot\ \(157\).png);" onclick="show('file:///C:/Users/X/Desktop/cloud-prev.svg');">
+            <div class="preview" style="background: url(cloud-prev.svg) center; background-size: cover;"></div>
+        </div>
+        <div class="card" style="background: url(m-circle-removebg-preview.png)">
+            <div class="preview" style="background: url(m-circle.svg);"></div>
+        </div>
+        <a class="card" style="background-image: url(file:///C:/Users/X/Downloads/hero-removebg-preview.png)" onclick="show('prev1.svg');">
+            <div class="preview" style="background-image: url(bg1.svg)" aria-label="wave"></div>
+        </a>
+        <div class="card">
+            <div class="preview"></div>
+        </div>
+        <div class="card">
+            <div class="preview"></div>
+        </div>
+        <div class="card">
+            <div class="preview"></div>
+        </div>
+        <div class="card">
+            <div class="preview"></div>
+        </div>
+        <div class="card">
+            <div class="preview"></div>
+        </div>
+        <div class="card">
+            <div class="preview"></div>
+        </div>
+        <div class="card">
+            <div class="preview"></div>
+        </div>
+        <div class="card">
+            <div class="preview"></div>
+        </div>
+        <div class="card">
+            <div class="preview"></div>
+        </div>
+        <div class="card">
+            <div class="preview"></div>
+        </div>
+        <div class="card">
+            <div class="preview"></div>
+        </div>
+        <div class="card">
+            <div class="preview"></div>
+        </div>
+        <div class="card">
+            <div class="preview"></div>
+        </div>
+        <div class="card">
+            <div class="preview"></div>
+        </div>
+        <div class="card">
+            <div class="preview"></div>
+        </div>
+        <div class="card">
+            <div class="preview"></div>
+        </div>
+    </div>
+    <div class="darken"></div>
+    <div class="pannel">
+        <div>Live Preview</div>
+        <a onclick="redirect('waver.html')">Customize and download</a>
+        <svg onclick="hide();" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="40px" hright="40px"><path d="M0 0L 100 100" stroke="white" stroke-width="9" stroke-linecap="round"/><path d="M0 100L 100 0" stroke="white" stroke-width="9" stroke-linecap="round"/></svg>
+    </div>
+    <script>
+        function show(url){
+            window.addEventListener("scroll", function(){
+        });
+            document.querySelector('.pannel').classList.add('show');
+            document.querySelector('.pannel').style.background = 'url(' + url + ')';
+            document.querySelector('.darken').classList.add('dactive');
+            document.body.style.overflow='hidden'
+        }
+        function redirect(link){
+            window.location.assign(link)
+        }
+        function hide(){
+            document.querySelector('.pannel').classList.remove('show');
+            document.querySelector('.darken').classList.remove('dactive');
+            document.body.style.overflow='visible'
+        }
+    </script>
+</body>
+</html>
